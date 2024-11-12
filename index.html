@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Bar </title>
+
+  <!-- 
+    - favicon
+  -->
+  <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/logo.jpg" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="#" class="logo">CodeBar<span class="span">.</span></a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="nav-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#food-menu" class="navbar-link" data-nav-link>Shop</a>
+          </li>
+
+
+
+          <li class="nav-item">
+            <a href="#" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="header-btn-group">
+        <button class="search-btn" aria-label="Search" data-search-btn>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+        <!-- <button class="btn btn-hover">Reservation</button> -->
+
+        <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
+          <span class="line top"></span>
+          <span class="line middle"></span>
+          <span class="line bottom"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <!-- 
+    - #SEARCH BOX
+  -->
+
+  <div class="search-container" data-search-container>
+
+    <div class="search-box">
+      <input type="search" name="search" aria-label="Search here" placeholder="Type keywords here..."
+        class="search-input">
+
+      <button class="search-submit" aria-label="Submit search" data-search-submit-btn>
+        <ion-icon name="search-outline"></ion-icon>
+      </button>
+    </div>
+
+    <button class="search-close-btn" aria-label="Cancel search" data-search-close-btn></button>
+
+  </div>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">Code Bar</p>
+
+            <h2 class="h1 hero-title">Snack Smarter, Code Faster</h2>
+
+            <!-- <p class="hero-text">Food is any substance consumed to provide nutritional support for an organism.</p> -->
+
+            <!-- <button class="btn">Book A Table</button> -->
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner-bg.png" width="820" height="716" alt="" aria-hidden="true"
+              class="w-100 hero-img-bg">
+
+            <img src="./assets/images/codebar.png" width="700" height="637" loading="lazy" alt="Burger"
+              class="w-100 hero-img">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PROMO
+      -->
+
+      <section class="section section-divider white promo">
+        <div class="container">
+
+          <ul class="promo-list has-scrollbar">
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+
+                <h3 class="h3 card-title">Sweet Bar Marsh Mallow</h3>
+
+                <!-- <p class="card-text">
+                  Food is any substance consumed to provide nutritional support for an organism.
+                </p> -->
+
+                <img src="./assets/images/cac-modified.png" width="300" height="300" loading="lazy" alt="Maxican Pizza"
+                  class="w-100 card-banner">
+
+              </div>
+            </li>
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+
+
+                <h3 class="h3 card-title">Sweet Bar Cockies and Cream Flavor </h3>
+
+                <!-- <p class="card-text">
+                  Food is any substance consumed to provide nutritional support for an organism.
+                </p> -->
+
+                <img src="./assets/images/cream.png" width="300" height="300" loading="lazy" alt="Soft Drinks"
+                  class="w-100 card-banner">
+
+              </div>
+            </li>
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+
+
+                <h3 class="h3 card-title">Sweet Bar Mango Graham </h3>
+
+                <!-- <p class="card-text">
+                  Food is any substance consumed to provide nutritional support for an organism.
+                </p> -->
+
+                <img src="./assets/images/mango.png" width="300" height="300" loading="lazy" alt="French Fry"
+                  class="w-100 card-banner">
+
+              </div>
+            </li>
+
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section section-divider gray about" id="about">
+        <div class="container">
+
+          <div class="about-banner">
+            <img src="./assets/images/logo.jpg" width="509" height="459" loading="lazy" alt="Burger with Drinks"
+              class="w-100 about-img">
+
+
+          </div>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">
+              Code Bar, Sweet Bars in different flavors
+              <span class="span">Only in UEP!</span>
+            </h2>
+
+            <p class="section-text">
+              The Codebar store is an entrepreneurial project by UEP IT students, offering Graham crackers in a variety
+              of unique and exciting flavors. Combining creativity and quality, this venture showcases the students'
+              innovative approach to business and their passion for delivering a fun, flavorful experience.
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Delicious & Sweet Bars</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Unique Flavors for Every Taste</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Bite for Smooth Debugging</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Bite for Stressful Acad Moments</span>
+              </li>
+
+            </ul>
+
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FOOD MENU
+      -->
+
+      <section class="section food-menu" id="food-menu">
+        <div class="container">
+
+          <p class="section-subtitle">Our Products!</p>
+
+          <h2 class="h2 section-title">
+            Our Delicious <span class="span">Foods</span>
+          </h2>
+
+          <!-- <p class="section-text">
+            Food is any substance consumed to provide nutritional support for an organism.
+          </p> -->
+
+          <ul class="fiter-list">
+
+            <li>
+              <button class="filter-btn  active">Graham Bars</button>
+            </li>
+
+
+
+          </ul>
+
+          <ul class="food-menu-list">
+
+            <li>
+              <div class="food-menu-card">
+
+                <div class="card-banner">
+                  <img src="./assets/images/cream.png" width="300" height="300" loading="lazy"
+                    alt="Fried Chicken Unlimited" class="w-100">
+
+                  <div class="badge">Discount! <button class="download-qr" onclick="(function() {
+    // Get the QR code image source URL
+    var qrCodeImage = document.getElementById('qr-code').src;
+    
+    // Create a new link element
+    var link = document.createElement('a');
+    link.href = qrCodeImage; // Set the href to the QR code image source
+    link.download = 'discount-qr-code.png'; // Set the download file name
+
+    // Programmatically trigger a click event on the link
+    link.click();
+})()">Download QR Code</button></div>
+
+
+                  <!-- Placeholder for QR code image -->
+                  <img id="qr-code" src="./assets/images/Web2.png" style="display:none" alt="Discount QR Code">
+
+
+                  <!-- <button class="btn food-menu-btn">Order Now</button> -->
+                </div>
+
+
+
+                <h3 class="h3 card-title">Sweet Bar Coockies and Cream</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price">Php. 35.00</data>
+                  <!-- 
+                  <del class="del" value="69.00">$69.00</del> -->
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card">
+
+                <div class="card-banner">
+                  <img src="./assets/images/mango.png" width="300" height="300" loading="lazy" alt="Burger King Whopper"
+                    class="w-100">
+
+                  <div class="badge">Discount! <button class="download-qr" onclick="(function() {
+    // Get the QR code image source URL
+    var qrCodeImage = document.getElementById('qr-code').src;
+    
+    // Create a new link element
+    var link = document.createElement('a');
+    link.href = qrCodeImage; // Set the href to the QR code image source
+    link.download = 'discount-qr-code.png'; // Set the download file name
+
+    // Programmatically trigger a click event on the link
+    link.click();
+})()">Download QR Code</button></div>
+
+                  <img id="qr-code" src="./assets/images/Web1.png" style="display:none" alt="Discount QR Code">
+
+                </div>
+
+
+
+                <h3 class="h3 card-title">Sweet Bar Mango Graham</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price" value="29.00">Php. 35.00</data>
+
+                  <!-- <del class="del">$39.00</del> -->
+
+                </div>
+
+              </div>
+            </li>
+
+
+            <li>
+              <div class="food-menu-card">
+
+                <div class="card-banner">
+                  <img src="./assets/images/cac-modified.png" width="300" height="300" loading="lazy"
+                    alt="Burger King Whopper" class="w-100">
+
+                  <div class="badge">Discount! <button class="download-qr" onclick="(function() {
+    // Get the QR code image source URL
+    var qrCodeImage = document.getElementById('qr-code').src;
+    
+    // Create a new link element
+    var link = document.createElement('a');
+    link.href = qrCodeImage; // Set the href to the QR code image source
+    link.download = 'discount-qr-code.png'; // Set the download file name
+
+    // Programmatically trigger a click event on the link
+    link.click();
+})()">Download QR Code</button></div>
+
+                  <img id="qr-code" src="./assets/images/Web2.png" style="display:none" alt="Discount QR Code">
+
+                </div>
+
+
+
+                <h3 class="h3 card-title">Sweet Bar Marsh Mallow</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price" value="29.00">Php. 35.00</data>
+
+                  <!-- <del class="del">$39.00</del> -->
+
+                </div>
+
+              </div>
+            </li>
+
+
+
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #DELIVERY
+      -->
+
+      <section class="section section-divider gray delivery">
+        <div class="container">
+
+          <div class="delivery-content">
+
+            <h2 class="h2 section-title">
+              A Moments Of Delivered On <span class="span">Right Time</span> & Place
+            </h2>
+
+            <p class="section-text">
+              We offer fast and reliable delivery services straight to your door! Simply message our page to place your
+              order, and we'll take care of the rest. Convenient, hassle-free, and on time – every time.
+            </p>
+
+            <a href="https://www.facebook.com/profile.php?id=61568571569984" target="_blank">
+              <button class="btn btn-hover">Message Us</button>
+            </a>
+
+          </div>
+
+          <figure class="delivery-banner">
+            <img src="./assets/images/delivery-banner-bg.png" width="700" height="602" loading="lazy" alt="clouds"
+              class="w-100">
+
+            <img src="./assets/images/delivery-boy.svg" width="1000" height="880" loading="lazy" alt="delivery boy"
+              class="w-100 delivery-img" data-delivery-boy>
+          </figure>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top" style="background-image: url('./assets/images/footer-illustration.png')">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="" class="logo">CodeBar<span class="span">.</span></a>
+
+          <p class="footer-text">
+            Snack Smarter, Code Faster!
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=61568571569984" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Info</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">09606608298</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">etraton57@gmail.com</p>
+          </li>
+
+
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Store Availabity!</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">November 13, Morning 8:00 AM to 11:00 AM, Afternoon 1:00 PM to 4:00 PM</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">November 14, Morning 10:00 AM to 11:30 AM, Afternoon 1:00 PM to 3:00 PM</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">November 15, Morning 8:00 AM to 10:00 AM, Afternoon 1:00 PM to 3:00 PM</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">@CBA Grounds, University of Eastern Philippines</p>
+          </li>
+        </ul>
+
+
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright-text">
+          &copy; 2024 <a href="#" class="copyright-link">BSIT-4a</a> All Rights Reserved.
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
