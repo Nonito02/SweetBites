@@ -335,8 +335,8 @@
                 <div class="card-banner">
                   <img src="./assets/images/cream.png" width="300" height="300" loading="lazy"
                     alt="Fried Chicken Unlimited" class="w-100">
-
-                  <div class="badge">Discount! 
+<div class="badge">
+    Discount! 
     <button class="download-qr" onclick="downloadQRCode()">Download QR Code</button>
 </div>
 
@@ -366,8 +366,12 @@
 
         // Set the flag to true so that subsequent downloads are blocked
         hasDownloaded = true;
+
+        // Hide the download button after the first download
+        document.querySelector('.download-qr').style.display = 'none';
     }
 </script>
+
 
 
 
