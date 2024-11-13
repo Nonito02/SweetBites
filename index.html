@@ -336,18 +336,39 @@
                   <img src="./assets/images/cream.png" width="300" height="300" loading="lazy"
                     alt="Fried Chicken Unlimited" class="w-100">
 
-                  <div class="badge">Discount! <button class="download-qr" onclick="(function() {
-    // Get the QR code image source URL
-    var qrCodeImage = document.getElementById('qr-code').src;
-    
-    // Create a new link element
-    var link = document.createElement('a');
-    link.href = qrCodeImage; // Set the href to the QR code image source
-    link.download = 'discount-qr-code.png'; // Set the download file name
+                  <div class="badge">Discount! 
+    <button class="download-qr" onclick="downloadQRCode()">Download QR Code</button>
+</div>
 
-    // Programmatically trigger a click event on the link
-    link.click();
-})()">Download QR Code</button></div>
+<!-- Placeholder for QR code image -->
+<img id="qr-code" src="./assets/images/Web2.png" style="display:none" alt="Discount QR Code">
+
+<script>
+    // Flag to check if the download has already occurred
+    let hasDownloaded = false;
+
+    function downloadQRCode() {
+        if (hasDownloaded) {
+            alert("You can only download the QR code once.");
+            return;
+        }
+
+        // Get the QR code image source URL
+        var qrCodeImage = document.getElementById('qr-code').src;
+        
+        // Create a new link element
+        var link = document.createElement('a');
+        link.href = qrCodeImage; // Set the href to the QR code image source
+        link.download = 'discount-qr-code.png'; // Set the download file name
+
+        // Programmatically trigger a click event on the link
+        link.click();
+
+        // Set the flag to true so that subsequent downloads are blocked
+        hasDownloaded = true;
+    }
+</script>
+
 
 
                   <!-- Placeholder for QR code image -->
